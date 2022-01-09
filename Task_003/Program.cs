@@ -1,30 +1,12 @@
-﻿int a = 1, b = 2, c = 3, d = 4, e = 5, f = 6, g = 7;
-int x = 5;
-if (a == x)
-{
-    Console.WriteLine("Понедельник");
-}
-if (b == x)
-{
-    Console.WriteLine("Вторник");
-}
-if (c == x)
-{
-    Console.WriteLine("Среда");
-}
-if (d == x)
-{
-    Console.WriteLine("Четверг");
-    }
-if (e == x)
-{
-    Console.WriteLine("Пятница");
-}
-if (f == x)
-{
-    Console.WriteLine("Суббота");
-}
-if (g == x)
-{
-    Console.WriteLine("Воскресенье");
-}
+﻿//  3. По заданному номеру дня недели вывести его название
+
+Console.WriteLine("Введите номер дня недели");
+int x = Convert.ToInt32(Console.ReadLine());
+if (x == 1) Console.WriteLine("Понедельник");
+if (x == 2) Console.WriteLine("Вторник");
+if (x == 3) Console.WriteLine("Среда");
+if (x == 4) Console.WriteLine("Четверг");
+if (x == 5) Console.WriteLine("Пятница");
+if (x == 6) Console.WriteLine("Суббота");
+if (x == 7) Console.WriteLine("Воскресенье");
+if ((x > 7) || (x < 1)) Console.WriteLine("Ошибка");
