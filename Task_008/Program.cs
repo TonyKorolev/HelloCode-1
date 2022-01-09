@@ -1,11 +1,19 @@
-﻿int N = 10;
-int index = 1;
-while (index < N+1)
+﻿// 8. Показать четные числа от 1 до N
+string numbers (int N)
 {
-    if(index%2==0)
+    int index = 1;
+    string row = String.Empty;
+    while (index < N+1)
     {
-        Console.Write(index);
-        Console.Write(" ");
+        if(index%2==0)
+        {
+            row = row + $"{index} ";
+        }
+        index++;
     }
-    index++;
+    return row;
 }
+
+int N = new Random().Next (1, 20);
+string answer = numbers(N);
+Console.WriteLine(answer);
