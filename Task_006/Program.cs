@@ -1,9 +1,20 @@
-﻿int a = 41;
-if (a%2==0)
+﻿// 6. Выяснить является ли число чётным
+
+string parity(int a)
 {
-    Console.WriteLine("Число четное");
+    string res = String.Empty;
+    if (a%2==0)
+    {
+        res = "Число четное";
+    }
+    else
+    {
+        res = "Число нечетное";
+    }
+    return res;
 }
-else
-{
-    Console.WriteLine("Число нечетное");
-}
+
+int a = new Random().Next(1,100);
+Console.WriteLine(a);
+string answer = parity(a);
+Console.WriteLine(answer);
