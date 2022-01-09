@@ -1,12 +1,12 @@
-﻿int a = 10, b = 3;
- 
+﻿// Даны два числа. Показать большее и меньшее число
+int a = new Random().Next(1, 100);
+int b = new Random().Next(1, 100);
+Console.WriteLine($"Даны числа {a}, {b}");
 if (a > b)
 {
-Console.Write("большее ");
-Console.WriteLine(a);
+Console.Write($"Большее {a}, меньшее {b}");
 }
 else 
 {
-Console.Write("большее ");
-Console.WriteLine(b);
+Console.Write($"Большее {b}, меньшее {a}");
 }
