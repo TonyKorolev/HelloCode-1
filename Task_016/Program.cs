@@ -1,4 +1,6 @@
-﻿int Day = new Random().Next(1, 8);
+﻿// 16. Дано число обозначающее день недели. Выяснить является номер дня недели выходным
+
+int Day = new Random().Next(1, 8);
 Console.WriteLine(Day);
 if (Day == 6 || Day == 7)
 {
