@@ -1,5 +1,4 @@
 ﻿int a = new Random().Next(10, 99);
-Console.WriteLine(a);
 int b = a/10;
 int c = a%10;
 int max = 0;
@@ -17,8 +16,5 @@ else
     {
         max = c;
     }
-    Console.Write("Наибольшая цифра числа ");
-    Console.Write(a);
-    Console.Write(" равна ");
-    Console.Write(max);
+    Console.Write($"Наибольшая цифра числа {a} равна {max}");
 }
