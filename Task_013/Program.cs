@@ -1,7 +1,9 @@
-﻿int a = new Random().Next(1, 999);
+﻿// 13. Выяснить, кратно ли число заданному, если нет, вывести остаток
+
+int a = new Random().Next(1, 999);
 Console.WriteLine(a);
 Console.WriteLine("Введите число, на которое нужно разделить");
-int b = int.Parse(Console.ReadLine());
+int b = Convert.ToInt32(Console.ReadLine());
 if (a%b==0)
 {
     Console.WriteLine("Кратно");
